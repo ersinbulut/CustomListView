@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:padding="10dp">
 
+    <ImageView
+        android:id="@+id/satir_resim"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <TextView
         android:id="@+id/satir_ad"
-        android:layout_width="150dp"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -14,9 +22,18 @@
 
     <TextView
         android:id="@+id/satir_soyad"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center_vertical"
         android:text="TextView" />
+
+    <TextView
+        android:id="@+id/satir_yas"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="TextView" />
+
 </LinearLayout>
